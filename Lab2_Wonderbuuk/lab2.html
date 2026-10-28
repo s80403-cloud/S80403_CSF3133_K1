@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 2 - Personal Profile Page</title>
+</head>
+<body>
+
+    <header>
+        <h1>My Personal Profile Page</h1>
+    </header>
+
+    <nav>
+        <a href="#about">About Me</a> | 
+        <a href="#profile-table">Profile Table</a> | 
+        <a href="#user-form">Registration Form</a>
+    </nav>
+
+    <section>
+        
+        <article id="about">
+            <h2>About Me</h2>
+            <p>Welcome to my personal webpage! Below is my profile information summarized in a table.</p>
+            
+            <h3 id="profile-table">Personal Information</h3>
+            <table border="1">
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Occupation</th>
+                </tr>
+                <tr>
+                    <td>PAGALAVAN A/L RAJAN</td>
+                    <td>22</td>
+                    <td>Web Developer</td>
+                </tr>
+                <tr>
+                    <td>Mithireein</td>
+                    <td>24</td>
+                    <td>UI/UX Designer</td>
+                </tr>
+            </table>
+        </article>
+
+        <hr>
+
+        <article id="user-form">
+            <h2>User Registration Form</h2>
+            <form action="submit_form.php" method="post">
+                <label for="name">Full Name:</label><br>
+                <input type="text" id="name" name="name" placeholder="Enter your full name"><br><br>
+
+                <label for="email">Email Address:</label><br>
+                <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+
+                <label>Gender:</label><br>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label><br><br>
+                <label>Favorite Hobbies:</label><br>
+                <input type="checkbox" id="hobby1" name="hobby1" value="Reading">
+                <label for="hobby1">Reading</label><br>
+                <input type="checkbox" id="hobby2" name="hobby2" value="Gaming">
+                <label for="hobby2">Gaming</label><br>
+                <input type="checkbox" id="hobby3" name="hobby3" value="Coding">
+                <label for="hobby3">Coding</label><br><br>
+
+                <input type="submit" value="Submit">
+            </form>
+        </article>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Personal Profile Page | Lab 2 Submission</p>
+    </footer>
+
+</body>
+</html>
