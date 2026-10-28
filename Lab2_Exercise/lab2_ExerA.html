@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UMT Tech Symposium 2026</title>
+</head>
+<body>
+
+    <header>
+        <h1>UMT Tech Symposium 2026</h1>
+        <p>Empowering Innovation through Web and Software Technologies</p>
+    </header>
+
+    <nav>
+        <a href="#about">About the Event</a> |
+        <a href="#schedule">Event Schedule</a> |
+        <a href="#register">Registration</a>
+    </nav>
+
+    <section id="about">
+        <h2>About the Event</h2>
+        <article>
+            <h3>Keynote Speaker: Dr. Rozniza</h3>
+            <p>Dr. Rozniza is an expert in web accessibility and modern frontend architectures. He will share key industry insights on building robust web solutions.</p>
+        </article>
+        <article>
+            <h3>Workshop Activity: Hands-on Web Development</h3>
+            <p>An interactive session designed to help students master HTML5 table design, form validation, and semantic document structuring.</p>
+        </article>
+    </section>
+
+    <section id="schedule">
+        <h2>Event Schedule</h2>
+        <table border>
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Activity</th>
+                    <th>Venue</th>
+                    <th>Person in Charge</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>08:30 AM - 09:00 AM</td>
+                    <td>Participant Registration</td>
+                    <td>Main Foyer</td>
+                    <td>Event Crew</td>
+                </tr>
+                <tr>
+                    <td>09:00 AM - 10:30 AM</td>
+                    <td>Keynote Presentation</td>
+                    <td rowspan="2">Auditorium A</td>
+                    <td>Dr. Rozniza</td>
+                </tr>
+                <tr>
+                    <td>10:30 AM - 12:00 PM</td>
+                    <td>Web Standards &amp; Accessibility</td>
+                    <td>Mdm. Visyali</td>
+                </tr>
+                <tr>
+                    <td>12:00 PM - 02:00 PM</td>
+                    <td colspan="3">Lunch Break &amp; Networking Session</td>
+                </tr>
+                <tr>
+                    <td>02:00 PM - 04:00 PM</td>
+                    <td>Hands-on Coding Lab</td>
+                    <td>Lab Computer 3</td>
+                    <td>Mr. Mithireein Raja</td>
+                </tr>
+                <tr>
+                    <td>04:00 PM - 05:00 PM</td>
+                    <td>Closing Ceremony &amp; Prize Giving</td>
+                    <td>Auditorium A</td>
+                    <td>Organising Committee</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="register">
+        <h2>Registration Form</h2>
+        <form action="register.html" method="post">
+            
+            <p>
+                <label for="fullname">Full Name:</label><br>
+                <input type="text" id="fullname" name="fullname">
+            </p>
+            <p>
+                <label for="matric">Matric Number:</label><br>
+                <input type="text" id="matric" name="matric">
+            </p>
+            <p>
+                <label for="email">E-mail Address:</label><br>
+                <input type="email" id="email" name="email">
+            </p>
+
+            <p>
+                <label>Year of Study:</label><br>
+                <input type="radio" id="year1" name="year_of_study" value="1">
+                <label for="year1">Year 1</label><br>
+                <input type="radio" id="year2" name="year_of_study" value="2">
+                <label for="year2">Year 2</label><br>
+                <input type="radio" id="year3" name="year_of_study" value="3">
+                <label for="year3">Year 3</label><br>
+                <input type="radio" id="year4" name="year_of_study" value="4">
+                <label for="year4">Year 4</label>
+            </p>
+
+            <p>
+                <label>Sessions to Join:</label><br>
+                <input type="checkbox" id="session1" name="sessions" value="keynote">
+                <label for="session1">Keynote Presentation</label><br>
+                <input type="checkbox" id="session2" name="sessions" value="standards">
+                <label for="session2">Web Standards &amp; Accessibility</label><br>
+                <input type="checkbox" id="session3" name="sessions" value="workshop">
+                <label for="session3">Hands-on Coding Lab</label>
+            </p>
+
+            <p>
+                <label for="programme">Programme / Faculty:</label><br>
+                <select id="programme" name="programme">
+                    <option value="cs">Faculty of Computer Science and Mathematics</option>
+                    <option value="se">Software Engineering</option>
+                    <option value="mth">Mathematical Sciences</option>
+                    <option value="ds">Data Science</option>
+                </select>
+            </p>
+
+            <p>
+                <input type="submit" value="Register Now">
+            </p>
+        </form>
+    </section>
+
+    <footer>
+        <p>Organiser: Faculty of Computer Science and Mathematics, UMT</p>
+        <p>Copyright &copy; 2026 UMT Tech Symposium. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
