@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 3 - Interactive Contact Form &amp; Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        #header {
+            background-color: #2c3e50;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        #content {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border: 1px solid #dddddd;
+            margin-bottom: 20px;
+        }
+        #calculator {
+            background-color: #eef2f5;
+            padding: 15px;
+            margin-top: 20px;
+            border-left: 4px solid #2c3e50;
+        }
+        #footer {
+            background-color: #dddddd;
+            padding: 15px;
+            text-align: center;
+            font-size: 0.9em;
+        }
+        .slogan {
+            font-style: italic;
+            color: #f1c40f;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1. Header Section (First <div>) -->
+    <div id="header">
+        <h1>Customer Support Portal</h1>
+        <p>
+            <span>We value your feedback!</span> &ndash; 
+            <span class="slogan">Connecting with you, one message at a time.</span>
+        </p>
+    </div>
+
+    <!-- 2. Content Section (Second <div>) -->
+    <div id="content">
+        <h2>Contact Us</h2>
+        <p>Please fill out the form below to schedule a follow-up with our team.</p>
+
+        <!-- HTML5 Contact Form -->
+        <form action="" oninput="satOut.value = satisfaction.value">
+            <p>
+                <label for="useremail"><strong>Email Address:</strong></label><br>
+                <input type="email" id="useremail" name="useremail" placeholder="name@example.com" required autofocus>
+            </p>
+
+            <p>
+                <label for="contactdate"><strong>Preferred Contact Date:</strong></label><br>
+                <input type="date" id="contactdate" name="contactdate" required>
+            </p>
+
+            <p>
+                <label for="satisfaction"><strong>Satisfaction Level (1 &ndash; 10):</strong></label><br>
+                1 <input type="range" id="satisfaction" name="satisfaction" min="1" max="10" step="1" value="5"> 10
+                <span>(Current Rating: <strong><output name="satOut" for="satisfaction">5</output></strong>)</span>
+            </p>
+
+            <p>
+                <input type="submit" value="Submit Inquiry">
+            </p>
+        </form>
+
+        <hr>
+
+        <!-- 3. Inline Calculator Section (Third <div> inside Content Section) -->
+        <div id="calculator">
+            <h3>Quick Inline Addition Calculator</h3>
+            <p>Enter two numbers below to calculate their sum dynamically using the <code>&lt;output&gt;</code> element:</p>
+            
+            <form oninput="sumResult.value = parseInt(num1.value || 0) + parseInt(num2.value || 0)">
+                <input type="number" id="num1" name="num1" value="10">
+                <span> <strong>+</strong> </span>
+                <input type="number" id="num2" name="num2" value="20">
+                <span> <strong>=</strong> </span>
+                <strong><output name="sumResult" for="num1 num2">30</output></strong>
+            </form>
+        </div>
+    </div>
+
+    <!-- 4. Footer Section (Final <div>) -->
+    <div id="footer">
+        <p>
+            Contact Information: <strong>support@example.com</strong> &nbsp;|&nbsp; Phone: <strong>+60 9-668 4111</strong>
+        </p>
+        <p>
+            &copy; 2026 Pagalavan Rajan. All Rights Reserved. &reg;
+        </p>
+    </div>
+
+</body>
+</html>
