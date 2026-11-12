@@ -1,0 +1,114 @@
+/* =========================================================
+   External Stylesheet for Problem B (cafe.css)
+   ========================================================= */
+
+/* General Layout & Responsive Container */
+body {
+    font-family: Arial, sans-serif;
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #fdfefe;
+}
+
+header, section, footer {
+    margin-bottom: 25px;
+}
+
+/* Part 2 (Item 5): Navigation Bar Styling */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #2c3e50;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    display: inline-block;
+    background-color: #2c3e50;
+    padding: 12px 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:link,
+nav ul li a:visited {
+    color: #ecf0f1;
+}
+
+nav ul li a:hover {
+    background-color: #e67e22;
+    color: #ffffff;
+}
+
+nav ul li a:active {
+    background-color: #c0392b;
+    color: #ffffff;
+}
+
+/* Part 2 (Item 6): Promotion Old Price Strike-through */
+.old-price {
+    text-decoration: line-through;
+    color: #7f8c8d;
+    margin-right: 6px;
+}
+
+/* Part 2 (Item 7): Responsive Video and Figure Styling */
+figure {
+    margin: 0;
+}
+
+figcaption {
+    font-style: italic;
+    color: #555555;
+    margin-top: 6px;
+}
+
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Part 2 (Item 8): Feedback Form Styling (.feedback-form) */
+.feedback-form {
+    background-color: #fef9e7;
+    padding: 20px;
+    border: 1px solid #f5b041;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.feedback-form input[type="text"],
+.feedback-form input[type="email"] {
+    width: 95%;
+    padding: 8px;
+    margin-top: 4px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.feedback-form button {
+    background-color: #2c3e50;
+    color: #ffffff;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.feedback-form button:hover {
+    background-color: #e67e22;
+}
+
+/* Footer Styling */
+footer {
+    border-top: 2px solid #bdc3c7;
+    padding-top: 15px;
+}

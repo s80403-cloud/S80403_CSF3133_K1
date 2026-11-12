@@ -1,0 +1,178 @@
+/* =========================================================
+   External Stylesheet for Problem A (style.css)
+   ========================================================= */
+
+/* General Page Styling */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #2c3e50;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #0e6251;
+    color: #ffffff;
+    padding: 25px 15px;
+    text-align: center;
+}
+
+/* Heading Underline Decoration */
+h2 {
+    text-decoration: underline;
+    color: #0e6251;
+}
+
+/* Interactive Link States (LVHA Order: link -> visited -> hover -> active) */
+a:link {
+    color: #1a5276;
+}
+
+a:visited {
+    color: #6c3483;
+}
+
+a:hover {
+    color: #d35400;
+}
+
+a:active {
+    color: #c0392b;
+}
+
+/* Navigation Bar Styling */
+nav {
+    background-color: #117864;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    display: block;
+    padding: 14px 22px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #117864;
+}
+
+nav ul li a:link,
+nav ul li a:visited {
+    color: #ffffff;
+}
+
+nav ul li a:hover {
+    background-color: #1abc9c;
+    color: #0b5345;
+}
+
+nav ul li a:active {
+    background-color: #0e6251;
+    color: #f1c40f;
+}
+
+/* ID Selectors (At least 2 required) */
+#destinations,
+#video,
+#trip {
+    width: 90%;
+    max-width: 960px;
+    margin: 25px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #d5dbdb;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+/* Class Selectors (At least 2 required) */
+.card {
+    background-color: #fafafa;
+    border: 1px solid #e0e0e0;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #7f8c8d;
+    margin-right: 8px;
+}
+
+.new-price {
+    font-weight: bold;
+    color: #c0392b;
+    font-size: 18px;
+}
+
+.center {
+    text-align: center;
+}
+
+/* Form Styling (.trip-form) */
+.trip-form {
+    background-color: #ebf5fb;
+    padding: 20px;
+    border: 2px solid #85c1e9;
+    width: 90%;
+    max-width: 550px;
+    margin: 0 auto;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.trip-form input[type="text"],
+.trip-form input[type="email"] {
+    width: 95%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+}
+
+.trip-form button {
+    background-color: #0e6251;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.trip-form button:hover {
+    background-color: #117864;
+}
+
+/* Responsive Media Styling */
+video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #1c2833;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+footer a:link,
+footer a:visited {
+    color: #76d7c4;
+}
