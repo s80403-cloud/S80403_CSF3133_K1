@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 4 - HTML5 and CSS Webpage</title>
+    
+    <!-- External CSS Link -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- Internal CSS (Required by Lab 4.9.1 Instruction 4) -->
+    <style type="text/css">
+        /* ID Selector */
+        #main-header {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: #ffffff;
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        /* Text Decoration Examples (Lab 4.7 & 4.9.1) */
+        .overline-title {
+            text-decoration: overline;
+            letter-spacing: 2px;
+            font-size: 0.9rem;
+            color: #ffd700;
+        }
+
+        .underline-heading {
+            text-decoration: underline;
+            color: #1e3c72;
+            margin-bottom: 15px;
+        }
+
+        .strike-text {
+            text-decoration: line-through;
+            color: #888888;
+        }
+
+        /* Highlight Class Selector */
+        .center-text {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Semantic Header -->
+    <header id="main-header">
+        <p class="overline-title">WEB DEVELOPMENT MODULE 4</p>
+        <h1>Interactive Multimedia &amp; CSS Portal</h1>
+        <p>Exploring Semantic HTML5, Video Embedding, and Cascading Style Sheets</p>
+    </header>
+
+    <!-- Semantic Navigation Bar -->
+    <nav>
+        <ul class="nav-list">
+            <li><a href="#about">About Module</a></li>
+            <li><a href="#media">Featured Video</a></li>
+            <li><a href="#register">Student Form</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Container -->
+    <div class="container">
+
+        <!-- Section 1: About & Article -->
+        <section id="about" class="card">
+            <h2 class="underline-heading">1. Semantic Web &amp; CSS Styling</h2>
+            <article>
+                <h3>Why Modern Standards Matter</h3>
+                <p>
+                    HTML5 semantic elements clearly describe their meaning to both the browser and the developer. 
+                    Outdated styling methods like <span class="strike-text">inline font tags and table layouts</span> 
+                    have been replaced by clean, maintainable <strong>Cascading Style Sheets (CSS)</strong>.
+                </p>
+                <p>
+                    Completion Progress for Lab Module 4: 
+                    <meter min="0" max="100" value="85">85%</meter> <strong>85%</strong>
+                </p>
+            </article>
+        </section>
+
+        <!-- Section 2: Embedded Video Media -->
+        <section id="media" class="card center-text">
+            <h2 class="underline-heading">2. Campus Showcase Video</h2>
+            <p>Watch the video below. Make sure **`upinipin.mp4`** (or your chosen video file) is saved in the same folder as this HTML file.</p>
+            
+            <div class="video-wrapper">
+                <video width="600" height="340" controls>
+                    <source src="upinipin.mp4" type="video/mp4">
+                    <track src="captions.vtt" kind="captions" srclang="en" label="English" default>
+                    Your browser does not support the HTML5 video tag.
+                </video>
+                <p class="video-caption">Figure 1: Embedded HTML5 MP4 video stream with responsive scaling and playback controls.</p>
+            </div>
+        </section>
+
+        <!-- Section 3: Interactive Form -->
+        <section id="register" class="card">
+            <h2 class="underline-heading">3. Student Feedback &amp; Registration Form</h2>
+            <p>Please fill in your details below to register your interest in the web design workshop:</p>
+
+            <form action="#" method="post" class="styled-form">
+                <!-- Name (Text Input) -->
+                <div class="form-group">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+                </div>
+
+                <!-- Email (Text Input / Email) -->
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="student@ocean.umt.edu.my" required>
+                </div>
+
+                <!-- Gender (Radio Buttons) -->
+                <div class="form-group">
+                    <label class="group-label">Gender:</label>
+                    <div class="option-group">
+                        <label><input type="radio" name="gender" value="Male" required> Male</label>
+                        <label><input type="radio" name="gender" value="Female"> Female</label>
+                    </div>
+                </div>
+
+                <!-- Favorite Hobbies (Checkboxes) -->
+                <div class="form-group">
+                    <label class="group-label">Favorite Hobbies:</label>
+                    <div class="option-group">
+                        <label><input type="checkbox" name="hobbies" value="Coding"> Coding &amp; Web Design</label>
+                        <label><input type="checkbox" name="hobbies" value="Gaming"> Gaming</label>
+                        <label><input type="checkbox" name="hobbies" value="Cycling"> Cycling</label>
+                        <label><input type="checkbox" name="hobbies" value="Photography"> Photography</label>
+                    </div>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="form-group">
+                    <button type="submit" class="submit-btn">Submit Registration</button>
+                </div>
+            </form>
+        </section>
+
+    </div>
+
+    <!-- Semantic Footer -->
+    <footer id="contact">
+        <p>&copy; 2026 Hakcipta Terpelihara - Fakulti Sains Komputer dan Matematik (FSKM).</p>
+        <address>
+            Hubungi kami di <a href="mailto:emailanda@umt.edu.my" class="footer-link">email saya (emailanda@umt.edu.my)</a>
+            atau layari <a href="https://www.umt.edu.my" target="_blank" class="footer-link">Portal Rasmi UMT</a>.
+        </address>
+    </footer>
+
+</body>
+</html>
