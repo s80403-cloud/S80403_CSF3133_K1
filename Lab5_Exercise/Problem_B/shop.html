@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campus Bookstore</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="shop.css">
+  <style>
+    h1 {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <!--
+    Error 1 (shop.html, Line 6): Google Fonts URL used v1 endpoint (/css?family=) with v2 syntax (:wght@400;700); changed to /css2?family=...
+    Error 2 (shop.html, Line 7): Invalid attribute rel="stylesheets" (extra 's'); changed to rel="stylesheet".
+    Error 3 (shop.html, Line 10): <style> tag was placed inside <body> instead of <head>; moved to <head>.
+    Error 4 (shop.html, Line 18): Inline CSS used '=' instead of ':' (color=#1B4F72;); corrected syntax (and styled white for Part 2 header).
+    Error 5 (shop.html, Line 20): Table id="product" did not match CSS selector #products; changed to id="products".
+    Error 6 (shop.css, Line 2): Misspelled font name 'Robotto'; corrected to 'Roboto'.
+    Error 7 (shop.css, Line 4): Missing hyphen in background-repeat value 'no repeat'; corrected to 'no-repeat'.
+    Error 8 (shop.css, Line 5): Misspelled property 'bacground-position'; corrected to 'background-position'.
+    Error 9 (shop.css, Line 18): 'display: inline;' on li a prevented vertical padding; changed to 'display: block;'.
+    Error 10 (shop.css, Line 23): Invalid selector 'li:a:hover' (extra colon); corrected to 'li a:hover'.
+    Error 11 (shop.css, Line 27): Invalid value 'collapsed' for border-collapse; corrected to 'collapse'.
+    Error 12 (shop.css, Line 34): ':nth-child(2)' only highlighted row 2; changed to ':nth-child(even)' for all alternating rows.
+    Error 13 (shop.css, Line 37): Invalid pseudo-class ':hovered'; corrected to ':hover'.
+    Error 14 (shop.css, Line 45): Missing semicolon ';' after 'background-color: #f1f1f1'.
+  -->
+
+  <header id="home">
+    <h1>Campus Bookstore</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a class="active" href="#home">Home</a></li>
+      <li><a href="#books">Books</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main id="books">
+    <p>Textbooks, stationery and more for every student.</p>
+
+    <table id="products">
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Category</th>
+          <th>Price (RM)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Web Design Basics</td>
+          <td>Textbook</td>
+          <td>45.00</td>
+        </tr>
+        <tr>
+          <td>A4 Notebook</td>
+          <td>Stationery</td>
+          <td>6.50</td>
+        </tr>
+        <tr>
+          <td>USB Drive 32GB</td>
+          <td>Gadget</td>
+          <td>25.00</td>
+        </tr>
+        <tr>
+          <td>Highlighter Set</td>
+          <td>Stationery</td>
+          <td>9.90</td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+
+  <footer id="contact">
+    &copy; 2026 Campus Bookstore
+  </footer>
+
+</body>
+</html>
