@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Development Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <header>
+            <h1>Web Development Quiz</h1>
+            <p>Test your knowledge of HTML, CSS, and JavaScript!</p>
+        </header>
+
+        <main>
+            <!-- Start Screen -->
+            <section id="start-section">
+                <p>You have <strong>15 seconds</strong> per question. Questions are randomized every attempt.</p>
+                <button id="start-btn" class="btn primary-btn" onclick="startQuiz()">Start Quiz</button>
+            </section>
+
+            <!-- Quiz Section -->
+            <section id="quiz-section" class="hidden">
+                <div class="quiz-header">
+                    <span id="question-progress">Question 1 of 5</span>
+                    <span id="timer">Time Left: <strong id="time-left">15</strong>s</span>
+                </div>
+
+                <h2 id="question-text">Question goes here</h2>
+
+                <div id="options-container" class="options-grid">
+                    <!-- Option buttons are generated dynamically via JS -->
+                </div>
+
+                <!-- Feedback Section -->
+                <div id="feedback-section" class="feedback hidden"></div>
+
+                <!-- Navigation / Action Buttons -->
+                <div class="controls">
+                    <button id="submit-btn" class="btn primary-btn" onclick="checkAnswer()" disabled>Submit Answer</button>
+                    <button id="next-btn" class="btn secondary-btn hidden" onclick="nextQuestion()">Next Question</button>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer for Final Score -->
+        <footer id="score-footer">
+            <p id="score-display">Current Score: 0 / 0</p>
+            <button id="restart-btn" class="btn primary-btn hidden" onclick="startQuiz()">Restart Quiz</button>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
